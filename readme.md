@@ -91,11 +91,11 @@ Si no lo tienes instalado, lo primero será realizar la instalación.
 
 - **Mac:** En [este vídeo](https://www.youtube.com/watch?v=KiHVmWr_bBY) lo explico paso a paso usando el gestor de paquetes Homebrew.
 
-Para los repositorios remotos haremos uso de la plataforma GitHub, por lo que si todavía no has creado una cuenta, puedes hacerlo desde [aquí](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). Es un proceso muy sencillo, pero si te surge algún incoveniente te dejo también [este vídeo](https://www.youtube.com/watch?v=dGIsU9F4yW0) donde lo explico paso a paso.
+Para los repositorios remotos haremos uso de la plataforma GitHub, por lo que si todavía no has creado una cuenta, puedes hacerlo desde [aquí](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). Es un proceso muy sencillo, pero si te surge algún inconveniente te dejo también [este vídeo](https://www.youtube.com/watch?v=dGIsU9F4yW0) donde lo explico paso a paso.
 
 [⬆️ Volver a inicio](#introducción)
 
-### Intalación GitHub CLI (opcional)
+### Instalación GitHub CLI (opcional)
 
 En esta guía verás como todas las acciones de GitHub se realizan desde la web y se complementan visualmente con capturas, pero si lo prefieres también puedes usar la [CLI de GitHub](https://cli.github.com/) para realizar las mismas acciones desde la terminal.
 
@@ -402,7 +402,7 @@ git status
 # no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
 ```
 
-En este caso nos está diciendo que tenemos el archivo "readme.md" sin hacerle seguimiento y nos da una recomendación sobre cual sería el siguiente paso y el comando a utilizar. Estas recomendaciones las hará siempre (por defecto), algo que suele venir bastante bien, pero que si no te convence lo puedes quitar en la configuración.
+En este caso nos está diciendo que tenemos el archivo "readme.md" sin hacerle seguimiento y nos da una recomendación sobre cuál sería el siguiente paso y el comando a utilizar. Estas recomendaciones las hará siempre (por defecto), algo que suele venir bastante bien, pero que si no te convence lo puedes quitar en la configuración.
 
 [⬆️ Volver a inicio](#introducción)
 
@@ -666,7 +666,7 @@ git restore .
 git restore *.md
 ```
 
-> Este comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a como ya se podía hacer con el comando `git checkout`.
+> Este comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a cómo ya se podía hacer con el comando `git checkout`.
 
 Si deseas revertir los cambios a otro commit que no sea exactamente el último, lo puedes hacer así:
 
@@ -680,7 +680,7 @@ git restore --source=<commit_hash> <archivo>
 
 \- **Deshacer commit**
 
-En el apartado anterior hemos visto como deshacer modificaciones de un archivo y este apartado veremos como deshacer commits, cambiándonos al que necesitemos.
+En el apartado anterior hemos visto cómo deshacer modificaciones de un archivo y este apartado veremos cómo deshacer commits, cambiándonos al que necesitemos.
 
 > En esta ocasión si se modificará el historial de commits.
 
@@ -712,7 +712,7 @@ git reset --soft HEAD~<n>
 ```
 
 > [!NOTE]
-> Estas son solo algunas de las formas mas utilizadas para revertir cambios, pero existen otras opciones según lo que necesitemos conseguir.
+> Estas son solo algunas de las formas más utilizadas para revertir cambios, pero existen otras opciones según lo que necesitemos conseguir.
 
 [⬆️ Volver a inicio](#introducción)
 
@@ -752,7 +752,7 @@ Tras pulsar el botón se crea el repositorio vacío y aparece la siguiente vista
 En esta vista, algunas de las cosas interesantes que aparecen son:
 
 - La posibilidad de **añadir colaboradores**.
-- La **url del repositorio**, las cual necesitamos para poder hacer la vinculación con el repositorio local y/o clonarlo. Si has configurado SSH elige esa opción y si no hazlo con HTTPS.
+- La **url del repositorio**, la cual necesitamos para poder hacer la vinculación con el repositorio local y/o clonarlo. Si has configurado SSH elige esa opción y si no hazlo con HTTPS.
 - **Instrucciones a seguir.** Nosotros ya tenemos creado el repositorio local, hemos añadido los archivos y creado el commit. Con `git branch -M main` renombramos la rama principal, pero no es necesario porque ya lo dejamos en la configuración global.
 - Los 2 últimos comandos si los necesitamos y son los que vamos a ver a continuación.
 
@@ -829,7 +829,7 @@ Si vuelves a entrar al repositorio remoto en GitHub verás que ya se han subido 
 
 ![Captura repositorio de GitHub con contenido](screenshots/new-repo-with-content.png)
 
-Si usas la bandera **-u** se añadirá una referencia de seguimiento a la rama y no será necesario añadir, en este caso, `origin main`. Esto habría que hacerlo en cada rama en casa de que hubiese más y quedaría así:
+Si usas la bandera **-u** se añadirá una referencia de seguimiento a la rama y no será necesario añadir, en este caso, `origin main`. Esto habría que hacerlo en cada rama en caso de que hubiese más y quedaría así:
 
 ```bash
 git push
@@ -869,7 +869,7 @@ Tras esto ya tendrás la carpeta con el repositorio en la ruta de tu ordenador d
 
 \- **Descargar cambios repositorio remoto**
 
-Cuando tienes vinculado un repositorio local con uno remoto no solo puedes subir cambios desde el local al remoto, si no que puede darse el caso de que haya cambios en el remoto y estos tengas que descargarlos al local.
+Cuando tienes vinculado un repositorio local con uno remoto no solo puedes subir cambios desde el local al remoto, sino que puede darse el caso de que haya cambios en el remoto y estos tengas que descargarlos al local.
 
 Esto puede pasar por varios motivos, por ejemplo, **se esté trabajando de forma colaborativa, se haya hecho alguna modificación desde GitHub, etc.**
 
@@ -930,7 +930,7 @@ git pull
 # Abortando
 ```
 
-No es posible hacer la descarga ya que tendría que sobrescribir los cambios. Veamos como podemos solucionarlo.
+No es posible hacer la descarga ya que tendría que sobrescribir los cambios. Veamos cómo podemos solucionarlo.
 
 Actualmente en GitHub hay un commit creado en el cual el archivo "prueba.txt" está así:
 
@@ -986,7 +986,7 @@ git pull
 # fatal: Necesita especificar cómo reconciliar las ramas divergentes.
 ```
 
-Parece que ya es posible, pero no por defecto. Al haber un commit en el repositorio remoto y otro en el repositorio local afectando al mismo archivo **necesitamos fusionarlos** y hay que decirle a Git como. Nos ofrece 3 opciones:
+Parece que ya es posible, pero no por defecto. Al haber un commit en el repositorio remoto y otro en el repositorio local afectando al mismo archivo **necesitamos fusionarlos** y hay que decirle a Git cómo. Nos ofrece 3 opciones:
 
 1. **git config pull.rebase false (fusionar)**
 
@@ -1037,7 +1037,7 @@ Como en este caso ha sido modificado el mismo archivo en la misma línea se ha g
 
 ![Captura de archivo prueba.txt con conflictos](screenshots/conflict-file-prueba.png)
 
-En verde aparece el estado actual y en azul lo que he modificado desde Github. Arriba aparecen unos botones para poder elegir con que quedarnos. En este caso será "Aceptar ambos cambios".
+En verde aparece el estado actual y en azul lo que he modificado desde Github. Arriba aparecen unos botones para poder elegir con qué quedarnos. En este caso será "Aceptar ambos cambios".
 
 Tras esto hay que crear un commit y subir los cambios.
 
@@ -1102,7 +1102,7 @@ git branch pruebas
 Con esto tan solo hemos creado la rama "pruebas", pero si queremos movernos a ella tenemos las siguientes opciones:
 
 ```bash
-git swith pruebas
+git switch pruebas
 ```
 
 Al cambiarte de rama verás el siguiente mensaje:
@@ -1138,7 +1138,7 @@ git switch otra-rama
 # fatal: referencia inválida: otra-rama
 ```
 
-> `git switch` es un comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a como ya se podía hacer con el comando `git checkout`.
+> `git switch` es un comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a cómo ya se podía hacer con el comando `git checkout`.
 
 ```bash
 git checkout pruebas
@@ -1150,7 +1150,7 @@ Con esto habremos cambiado a la rama "pruebas". Pero estos comandos también nos
 git switch -c pruebas
 ```
 
-> `git switch` es un comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a como ya se podía hacer con el comando `git checkout`.
+> `git switch` es un comando moderno y recomendado, **disponible desde Git 2.23**, es más intuitivo y pretende sustituir a cómo ya se podía hacer con el comando `git checkout`.
 
 ```bash
 git checkout -b pruebas
@@ -1162,7 +1162,7 @@ Con estos 2 últimos comandos creamos una rama y nos cambiamos directamente a el
 
 \- **Listar ramas**
 
-Una vez hay más de una rama creada es posible que te interese listarlas para ver cuales hay y cual es la rama actual. Para ello tan solo hay que usar:
+Una vez hay más de una rama creada es posible que te interese listarlas para ver cuáles hay y cuál es la rama actual. Para ello tan solo hay que usar:
 
 ```bash
 git branch
@@ -1188,7 +1188,7 @@ git branch --show-current
 
 \- **Trabajando con ramas**
 
-Ha llegado el momento de trabajar con ramas. Para ello he empezado el repositorio de 0 con un solo commit y he creado la rama "pruebas. El proceso a sido el siguiente:
+Ha llegado el momento de trabajar con ramas. Para ello he empezado el repositorio de 0 con un solo commit y he creado la rama "pruebas". El proceso ha sido el siguiente:
 
 ```bash
 # EJEMPLO ↓
@@ -1244,7 +1244,7 @@ De esta manera ahora en la rama "main" está el archivo "prueba.txt" y el archiv
 
 Y en la rama "pruebas" está el archivo "prueba.txt" y el archivo "archivo2.txt", pero no está el archivo "archivo3.txt".
 
-Por lo que el primer commit "first commit" era compartido por ambas ramas, pero ahora cada rama tiene un nuevo commit y estas an divergido y se ve así.
+Por lo que el primer commit "first commit" era compartido por ambas ramas, pero ahora cada rama tiene un nuevo commit y estas han divergido y se ve así.
 
 ![Gráfico que muestra 2 ramas divergidas](screenshots/branches-graph.png)
 
@@ -1270,9 +1270,9 @@ Para hacer el merge Git hará otro commit que incluya todos los cambios, por lo 
 
 Si hubiese conflictos los podríamos solucionar como vimos en la sección de repositorios remotos.
 
-Ahora en la rama "main" tenemos el archivo "archivo2.txt" que se creó en la rama "pruebas". Ahora podríamos borrar la rama "pruebas" si ya no más cambios a realizar o podemos hacer un merge para que traiga el archivo "archivo3.txt" de main.
+Ahora en la rama "main" tenemos el archivo "archivo2.txt" que se creó en la rama "pruebas". Ahora podríamos borrar la rama "pruebas" si ya no hay más cambios a realizar o podemos hacer un merge para que traiga el archivo "archivo3.txt" de main.
 
-En mi caso voy a hacer el merge, ya que quiero volver a añadir cambios para está vez hacer una PR y hacer el merge desde el repositorio remoto en GitHub.
+En mi caso voy a hacer el merge, ya que quiero volver a añadir cambios para esta vez hacer una PR y hacer el merge desde el repositorio remoto en GitHub.
 
 ```bash
 git switch -
@@ -1344,7 +1344,7 @@ git push origin pruebas
 
 Ya se han subido los cambios a la rama remota "pruebas", por lo que es hora de ir a GitHub y ver cómo hacer la PR y el merge.
 
-Al entrar al repositorio aparecerá un banner con un botón **"Compare & pull request"**. Veamos que sucede al hacer clic en el.
+Al entrar al repositorio aparecerá un banner con un botón **"Compare & pull request"**. Veamos que sucede al hacer clic en él.
 
 ![Vista repo GtHub con botón de hacer PR](screenshots/pr-github.png)
 
@@ -1357,7 +1357,7 @@ Se nos mostrará la siguiente vista en la que podemos ver cosas como:
 
 ![Vista para hacer PR en un repo de GitHub](<screenshots/pr-github(2).png>)
 
-También volvemos a tener otro botón de color verde **"Create pull request"** para crear la PR. En este caso lo podemos hacer directamente, pero también en posible que en otros proyectos tenga que ser revisada por alguien más y te la tengan que aceptar.
+También volvemos a tener otro botón de color verde **"Create pull request"** para crear la PR. En este caso lo podemos hacer directamente, pero también es posible que en otros proyectos tenga que ser revisada por alguien más y te la tengan que aceptar.
 
 ![Vista para hacer un merge desde GitHub](screenshots/merge-pr-github.png)
 
@@ -1407,7 +1407,7 @@ Y ahora ya se habilita de nuevo el botón **"Merge pull request"** para finaliza
 
 ![Pantalla para hacer merge en GitHub](<screenshots/merge-pr-github(4).png>)
 
-Con esto ya sabes como hacer merge desde Git y desde GitHub con una PR y como solucionar conflictos tanto desde el editor como desde GitHub.
+Con esto ya sabes cómo hacer merge desde Git y desde GitHub con una PR y cómo solucionar conflictos tanto desde el editor como desde GitHub.
 
 Veamos el siguiente paso.
 
@@ -1506,12 +1506,12 @@ git stash list
 
 - **Guardar stash con mensaje**
 
-Pero guardar varios stast sin ponerles un mensaje puede ser lioso, ya que git le añade uno de forma automática, el cual no nos ayudará a identificar de forma correcta que cambios almacenamos en cada uno.
+Pero guardar varios stashes sin ponerles un mensaje puede ser lioso, ya que git le añade uno de forma automática, el cual no nos ayudará a identificar de forma correcta qué cambios almacenamos en cada uno.
 
 Lo ideal es guardarlos con un mensaje propio usando el comando:
 
 ```bash
-git stast -m "<mensaje>"
+git stash -m "<mensaje>"
 ```
 
 ```bash
@@ -1563,7 +1563,7 @@ Otro aspecto que tendrás que tener controlado es el de **ignorar archivos en Gi
 
 Por ejemplo, no se recomienda subir la carpeta "node_modules" o los archivos de variables de entorno ".env".
 
-Para **ignorar archivos en repositorio en concreto**, tan solo tienes crear un archivo ".gitignore" y añadir en el lo que quieres ignorar. Por ejemplo:
+Para **ignorar archivos en un repositorio en concreto**, tan solo tienes que crear un archivo ".gitignore" y añadir en él lo que quieres ignorar. Por ejemplo:
 
 ```
 node_modules # La carpeta node_modules
@@ -1578,7 +1578,7 @@ Si lo prefieres también puedes crear el archivo .gitignore con un [generador](h
 
 > En VS code los archivos ignorados saldrán en gris.
 
-También es posible **ignorar archivos de manera global** en todos los repositorios. Para ello debes crear el archivo .gitignore_global en la raíz del sistema `~/.gitignore_global` con los patrones de los archivos quieras ignorar y añadirlo en la configuración de Git con el comando `git config --global core.excludesfile ~/.gitignore_global`.
+También es posible **ignorar archivos de manera global** en todos los repositorios. Para ello debes crear el archivo .gitignore_global en la raíz del sistema `~/.gitignore_global` con los patrones de los archivos que quieras ignorar y añadirlo en la configuración de Git con el comando `git config --global core.excludesfile ~/.gitignore_global`.
 
 [⬆️ Volver a inicio](#introducción)
 
@@ -1596,12 +1596,6 @@ También es posible **ignorar archivos de manera global** en todos los repositor
   <summary>¿Cuál es la diferencia entre Git y otros sistemas de control de versiones?</summary>
 
 - A diferencia de sistemas centralizados, Git es distribuido, lo que significa que cada desarrollador tiene una copia completa del historial del proyecto. Esto permite trabajar de forma independiente y fusionar los cambios más adelante.
-</details>
-
-<details>
-  <summary>¿Qué es un “commit” en Git?</summary>
-
-- Un commit es una instantánea de los cambios en el código. Sirve para guardar un conjunto específico de modificaciones con un mensaje que describe el propósito del cambio.
 </details>
 
 <details>
