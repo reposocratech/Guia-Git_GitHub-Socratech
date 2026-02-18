@@ -29,18 +29,14 @@ Si te ha gustado esta guía guárdate el repositorio como favorito dándole a la
    - [Información](#información)
    - [Archivos y carpetas](#archivos-y-carpetas)
 6. [Comandos Git](#comandos-git)
-   - [Iniciar repositorio y ver su estado](#iniciar-repositorio-y-ver-su-estado)
-   - [Seguimiento de archivos](#seguimiento-de-archivos)
-   - [Commits](#commits)
+   - [Flujo básico local](#flujo-básico-local)
    - [Repositorio remoto (GitHub)](#repositorio-remoto-github)
-   - [Ramas](#ramas)
-   - [Alias](#alias)
-   - [Stash](#stash)
-7. [Ignorar archivos](#ignorar-archivos)
-8. [Preguntas frecuentes](#preguntas-frecuentes)
+   - [Gestión de ramas y colaboración](#gestión-de-ramas-y-colaboración)
+   - [Herramientas de productividad](#herramientas-de-productividad)
+7. [Preguntas frecuentes](#preguntas-frecuentes)
    - [Preguntas sobre Git](#preguntas-sobre-git)
    - [Preguntas sobre GitHub](#preguntas-sobre-github)
-9. [Sobre nosotros](#descubre-más-sobre-nosotros)
+8. [Sobre nosotros](#descubre-más-sobre-nosotros)
 </details>
 
 ## ¿Qué es Git?
@@ -349,9 +345,9 @@ rm -r pruebas
 
 ## Comandos Git
 
-Una vez ya sabes [qué es Git](#qué-es-git), lo has [instalado](#instalación) y has creado la cuenta en un servicio para alojar repositorios en la nube (en nuestro caso, GitHub), has realizado las [configuraciones necesarias](#configuración) y has aprendido a [manejar el sistema de archivos desde la terminal](#comandos-sistema-de-archivos), es hora de darle caña a los comandos de Git (y no serán pocos 😛).
+### Flujo básico local
 
-### Iniciar repositorio y ver su estado
+#### Iniciar repositorio y ver su estado
 
 #### Crear un repositorio local
 
@@ -1068,7 +1064,7 @@ De esta forma queda solucionado el conflicto y el archivo "prueba.txt" conserva 
 
 [⬆️ Volver a inicio](#introducción)
 
-### Ramas
+### Gestión de ramas y colaboración
 
 Hasta ahora todos los cambios realizados se han hecho en un repositorio manejado por **una sola persona** y directamente en la **rama principal main**, por lo que todos los cambios se han ido realizando de manera **lineal**.
 
@@ -1456,7 +1452,9 @@ git push origin --delete pruebas
 #  - [deleted]         pruebas
 ```
 
-### Stash
+### Herramientas de productividad
+
+#### Stash
 
 - **¿Qué es?**
 
@@ -1553,11 +1551,13 @@ o
 git stash apply stash@{<numero>}
 ```
 
-### Alias
+[⬆️ Volver a inicio](#introducción)
+
+#### Alias
 
 - **¿Qué son?**
 
-En esta guía tan solo hemos visto algunos de los múltiples comandos que tenemos en git, muchos de ellos los cuales incluyen varios parámetros de cnfiguración, lo que hace que los comandos sean más largos y difíciles de recordar.
+En esta guía tan solo hemos visto algunos de los múltiples comandos que tenemos en git, muchos de ellos los cuales incluyen varios parámetros de configuración, lo que hace que los comandos sean más largos y difíciles de recordar.
 
 Por eso, lo ideal es crear alias para los comandos más utilizados, para que puedas usarlos de forma más cómoda.
 
@@ -1588,7 +1588,9 @@ Para ver los alias que tienes configurados puedes usar el comando:
 git config --global --list
 ```
 
-## Ignorar archivos
+[⬆️ Volver a inicio](#introducción)
+
+#### Ignorar archivos
 
 Otro aspecto que tendrás que tener controlado es el de **ignorar archivos en Git**, porque no siempre querrás que absolutamente todo llegue al remoto.
 
