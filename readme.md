@@ -18,14 +18,17 @@ Si te ha gustado esta guía guárdate el repositorio como favorito dándole a la
   <summary style='font-weight: bold'>Tabla de contenidos</summary>
 
 1. [¿Qué es Git?](#qué-es-git)
-2. [Instalación](#instalación)
-3. [Configuración](#configuración)
+2. [¿Qué es GitHub?](#qué-es-github)
+3. [Instalaciones](#instalaciones)
+   - [Instalación Git](#instalación-git)
+   - [Instalación GitHub CLI (opcional)](#instalación-github-cli-opcional)
+4. [Configuración](#configuración)
    - [Configuraciones globales](#configuraciones-globales)
    - [Configuración de claves SSH (Opcional)](#configuración-de-claves-ssh-opcional)
-4. [Comandos sistema de archivos](#comandos-sistema-de-archivos)
+5. [Comandos sistema de archivos](#comandos-sistema-de-archivos)
    - [Información](#información)
    - [Archivos y carpetas](#archivos-y-carpetas)
-5. [Comandos Git](#comandos-git)
+6. [Comandos Git](#comandos-git)
    - [Iniciar repositorio y ver su estado](#iniciar-repositorio-y-ver-su-estado)
    - [Seguimiento de archivos](#seguimiento-de-archivos)
    - [Commits](#commits)
@@ -33,11 +36,11 @@ Si te ha gustado esta guía guárdate el repositorio como favorito dándole a la
    - [Ramas](#ramas)
    - [Alias](#alias)
    - [Stash](#stash)
-6. [Ignorar archivos](#ignorar-archivos)
-7. [Preguntas frecuentes](#preguntas-frecuentes)
+7. [Ignorar archivos](#ignorar-archivos)
+8. [Preguntas frecuentes](#preguntas-frecuentes)
    - [Preguntas sobre Git](#preguntas-sobre-git)
    - [Preguntas sobre GitHub](#preguntas-sobre-github)
-8. [Sobre nosotros](#descubre-más-sobre-nosotros)
+9. [Sobre nosotros](#descubre-más-sobre-nosotros)
 </details>
 
 ## ¿Qué es Git?
@@ -50,7 +53,25 @@ Git es especialmente útil cuando se trabaja en **proyectos de programación col
 
 [⬆️ Volver a inicio](#introducción)
 
-## Instalación
+## ¿Qué es GitHub?
+
+GitHub es una **plataforma de alojamiento de código fuente** que utiliza Git para el control de versiones. Es un servicio en línea donde los desarrolladores pueden **almacenar, gestionar y compartir sus proyectos** de software.
+
+Con GitHub, puedes:
+
+- **Guardar tus repositorios** en la nube, permitiendo el acceso desde cualquier lugar.
+- **Colaborar con otros desarrolladores** en proyectos compartidos.
+- **Hacer un seguimiento de los cambios** realizados en el código.
+- **Revertir a versiones anteriores** si es necesario.
+- **Trabajar en equipo** de manera más eficiente.
+
+GitHub es especialmente útil cuando se trabaja en **proyectos de programación colaborativos**, ya que facilita la integración de aportes de diferentes personas sin que se pierdan cambios o se generen conflictos en el código.
+
+[⬆️ Volver a inicio](#introducción)
+
+## Instalaciones
+
+### Instalación Git
 
 Si no sabes si ya tienes instalada una versión de Git, puedes comprobarlo con alguno de los siguientes comandos:
 
@@ -73,6 +94,10 @@ Si no lo tienes instalado, lo primero será realizar la instalación.
 Para los repositorios remotos haremos uso de la plataforma GitHub, por lo que si todavía no has creado una cuenta, puedes hacerlo desde [aquí](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). Es un proceso muy sencillo, pero si te surge algún incoveniente te dejo también [este vídeo](https://www.youtube.com/watch?v=dGIsU9F4yW0) donde lo explico paso a paso.
 
 [⬆️ Volver a inicio](#introducción)
+
+### Intalación GitHub CLI (opcional)
+
+En esta guía verás como todas las acciones de GitHub se realizan desde la web y se complementan visualmente con capturas, pero si lo prefieres también puedes usar la [CLI de GitHub](https://cli.github.com/) para realizar las mismas acciones desde la terminal.
 
 ## Configuración
 
