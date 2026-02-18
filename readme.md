@@ -1555,7 +1555,38 @@ git stash apply stash@{<numero>}
 
 ### Alias
 
-En desarrollo...
+- **¿Qué son?**
+
+En esta guía tan solo hemos visto algunos de los múltiples comandos que tenemos en git, muchos de ellos los cuales incluyen varios parámetros de cnfiguración, lo que hace que los comandos sean más largos y difíciles de recordar.
+
+Por eso, lo ideal es crear alias para los comandos más utilizados, para que puedas usarlos de forma más cómoda.
+
+- **¿Cómo crear alias?**
+
+Para crear alias puedes usar el comando de configuración de git:
+
+```bash
+git config --global alias.[nombre-alias] "<comando>"
+```
+
+> [!NOTE]
+> [nombre-alias] es el nombre que le quieres dar al alias y [comando] es el comando que quieres ejecutar.
+
+Por ejemplo, si quieres crear un alias para el comando "git status", puedes usar el siguiente comando:
+
+```bash
+git config --global alias.st "status"
+```
+
+Puedes crear alias para cualquier comando de git y así usarlo de forma más cómoda y ahorrar tiempo.
+
+- **¿Cómo ver los alias?**
+
+Para ver los alias que tienes configurados puedes usar el comando:
+
+```bash
+git config --global --list
+```
 
 ## Ignorar archivos
 
