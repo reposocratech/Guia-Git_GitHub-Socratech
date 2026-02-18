@@ -1458,7 +1458,100 @@ git push origin --delete pruebas
 
 ### Stash
 
-En desarrollo...
+- **¿Qué es?**
+
+En múltiples ocasiones te encontrarás en la situación de tener que cambiar de rama pero no quieres perder los cambios que tienes en la rama actual y todavía no quieres hacer commit. Stash te permite guardar estos cambios temporalmente y volver a ellos más tarde.
+
+- **Guardar cambios en stash**
+
+Para guardar los cambios en stash puedes usar el comando:
+
+```bash
+git stash
+```
+
+```bash
+# EJEMPLO ↓
+
+git stash
+# Saved working directory and index state WIP on pruebas: 25bf41c <previous-commit-message>
+```
+
+Con esto se guardan los cambios en una pila y te deja la rama en el estado en el que estaba antes de hacer los cambios.
+
+> [!IMPORTANT]
+> Cuidado si tienes archivos nuevos a guardar en stash, ya que no se guardarán usando el comando anterior y para ello tendrás que usar el comando:
+
+```bash
+git stash -u
+```
+
+> [!IMPORTANT]
+> Si borras el repositorio local o la rama sin volver a recuperar los cambios, perderás los cambios guardados en el stash.
+
+- **Ver los cambios en stash**
+
+Si guardas varios stashes puedes verlos con el comando:
+
+```bash
+git stash list
+```
+
+```bash
+# EJEMPLO ↓
+
+git stash list
+# stash@{0}: WIP on pruebas: <previous-commit-message>
+```
+
+- **Guardar stash con mensaje**
+
+Pero guardar varios stast sin ponerles un mensaje puede ser lioso, ya que git le añade uno de forma automática, el cual no nos ayudará a identificar de forma correcta que cambios almacenamos en cada uno.
+
+Lo ideal es guardarlos con un mensaje propio usando el comando:
+
+```bash
+git stast -m "<mensaje>"
+```
+
+```bash
+# EJEMPLO ↓
+
+git stash -m "cambios en pruebas"
+# Saved working directory and index state On pruebas: cambios en pruebas
+
+git stash list
+# stash@{0}: On pruebas: cambios en pruebas
+```
+
+- **Recuperar los cambios en stash**
+
+Para volver a recuperar los cambios puedes usar el comando:
+
+```bash
+git stash pop
+```
+
+> [!NOTE]
+> Esto recupera los cambios del último stash y los aplica en la rama actual, borrando el stash.
+
+Si quieres recuperar los cambios pero no quieres borrar el stash, puedes usar el comando:
+
+```bash
+git stash apply
+```
+
+Para recuperar un stash en concreto puedes usar el comando:
+
+```bash
+git stash pop stash@{<numero>}
+```
+
+o
+
+```bash
+git stash apply stash@{<numero>}
+```
 
 ### Alias
 
