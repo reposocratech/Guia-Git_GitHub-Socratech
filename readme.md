@@ -1,6 +1,4 @@
-![Portada Socratech](https://user-images.githubusercontent.com/87479242/206247313-27356947-69bf-4dda-af17-6e95b4898f29.png)
-
-# Guía Git/GitHub - SOCRATECH
+# Guía Git/GitHub
 
 ## Introducción
 
@@ -9,8 +7,6 @@ En este repositorio dispones de una guía de uso básica sobre Git y GitHub en l
 **Todo lo descrito en esta guía tendrá que ser usado a través de una terminal**, pero si lo deseas Git también puede ser usado en un gran número de [interfaces gráficas](https://git-scm.com/downloads/guis).
 
 El material está basado en documentación oficial de Git, diversos tutoriales y en nuestra propia experiencia como formadores.
-
-También hemos grabado diferentes tutoriales, los cuales podéis ver en esta [lista en nuestro canal de YouTube](https://www.youtube.com/watch?v=j-W3D0efSIk&list=PLu92OXKwcPyQOM2uf04bWlocmVz7KbITT).
 
 Si te ha gustado esta guía guárdate el repositorio como favorito dándole a la ⭐️ y compártela con tus conocidos.
 
@@ -764,7 +760,7 @@ git remote add origin <url-repositorio>
 
 ```bash
 # EJEMPLO ↓
-git remote add origin git@github-trabajo:reposocratech/tutorial-git.git
+git remote add origin git@github-personal:sergio-jr-dev/tutorial-git.git
 ```
 
 Este comando no mostrará ningún mensaje por consola, pero puedes comprobar si se ha vinculado realmente, usando el comando:
@@ -777,14 +773,14 @@ git remote -v
 #EJEMPLO ↓
 git remote -v
 
-# origin	git@github-trabajo:reposocratech/tutorial-git.git (fetch)
-# origin	git@github-trabajo:reposocratech/tutorial-git.git (push)
+# origin	git@github-personal:sergio-jr-dev/tutorial-git.git (fetch)
+# origin	git@github-personal:sergio-jr-dev/tutorial-git.git (push)
 ```
 
 Si intentas vincularlo de nuevo te saldrá el siguiente error:
 
 ```bash
-git remote add origin git@github-trabajo:reposocratech/tutorial-git.git
+git remote add origin git@github-personal:sergio-jr-dev/tutorial-git.git
 # error: remoto origin ya existe.
 ```
 
@@ -817,7 +813,7 @@ git push origin main
 # Escribiendo objetos: 100% (11/11), 1.02 MiB | 8.47 MiB/s, listo.
 # Total 11 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 # remote: Resolving deltas: 100% (1/1), done.
-# To github-trabajo:reposocratech/tutorial-git.git
+# To github-personal:sergio-jr-dev/tutorial-git.git
 #  * [new branch]      main -> main
 ```
 
@@ -842,13 +838,13 @@ Para clonarlo tienes que acceder a la página del repositorio, darle al **botón
 ![Captura GitHub clonar repositorio](screenshots/clone-repository.png)
 
 ```bash
-git clone git@github-trabajo:reposocratech/tutorial-git.git
+git clone git@github-personal:sergio-jr-dev/tutorial-git.git
 ```
 
 Esto mostrará un mensaje parecido a este por la terminal:
 
 ```bash
-git clone git@github-trabajo:reposocratech/tutorial-git.git
+git clone git@github-personal:sergio-jr-dev/tutorial-git.git
 
 # Clonando en 'tutorial-git'...
 # remote: Enumerating objects: 17, done.
@@ -890,7 +886,7 @@ git pull origin main
 # remote: Compressing objects: 100% (2/2), done.
 # remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 # Desempaquetando objetos: 100% (3/3), 998 bytes | 499.00 KiB/s, listo.
-# Desde github-trabajo:reposocratech/tutorial-git
+# Desde github-personal:sergio-jr-dev/tutorial-git
 #  * branch            main       -> FETCH_HEAD
 #    e41154e..30374bd  main       -> origin/main
 # Actualizando e41154e..30374bd
@@ -917,7 +913,7 @@ git pull
 # remote: Compressing objects: 100% (3/3), done.
 # remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 # Desempaquetando objetos: 100% (3/3), 1019 bytes | 339.00 KiB/s, listo.
-# Desde github-trabajo:reposocratech/tutorial-git
+# Desde github-personal:sergio-jr-dev/tutorial-git
 #    9efece0..52aacd7  main       -> origin/main
 # Actualizando 9efece0..52aacd7
 # error: Los cambios locales de los siguientes archivos serán sobrescritos al fusionar:
@@ -952,9 +948,9 @@ Si ahora intento subir este archivo seguiré teniendo un error, veremos que pasa
 git push
 
 # Enter passphrase for key '/Users/sergio/.ssh/id_rsa_trabajo':
-# To github-trabajo:reposocratech/tutorial-git.git
+# To github-personal:sergio-jr-dev/tutorial-git.git
 #  ! [rejected]        main -> main (non-fast-forward)
-# error: falló el empuje de algunas referencias a 'github-trabajo:reposocratech/tutorial-git.git'
+# error: falló el empuje de algunas referencias a 'github-personal:sergio-jr-dev/tutorial-git.git'
 # hint: Updates were rejected because the tip of your current branch is behind
 # hint: its remote counterpart. If you want to integrate the remote changes,
 # hint: use 'git pull' before pushing again.
@@ -1053,7 +1049,7 @@ git push origin main
 # Escribiendo objetos: 100% (14/14), 215.24 KiB | 1.96 MiB/s, listo.
 # Total 14 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
 # remote: Resolving deltas: 100% (5/5), completed with 2 local objects.
-# To github-trabajo:reposocratech/tutorial-git.git
+# To github-personal:sergio-jr-dev/tutorial-git.git
 #    52aacd7..d03065f  main -> main
 ---
 ```
@@ -1296,7 +1292,7 @@ git push origin main
 # Escribiendo objetos: 100% (8/8), 787 bytes | 787.00 KiB/s, listo.
 # Total 8 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
 # remote: Resolving deltas: 100% (2/2), done.
-# To github-trabajo:reposocratech/ejemplos-git.git
+# To github-personal:sergio-jr-dev/ejemplos-git.git
 #    4edc7e7..2cfe5f0  main -> main
 git switch -
 # Cambiado a rama 'pruebas'
@@ -1332,9 +1328,9 @@ git push origin pruebas
 # Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 # remote:
 # remote: Create a pull request for 'pruebas' on GitHub by visiting:
-# remote:      https://github.com/reposocratech/ejemplos-git/pull/new/pruebas
+# remote:      https://github-personal:sergio-jr-dev/ejemplos-git/pull/new/pruebas
 # remote:
-# To github-trabajo:reposocratech/ejemplos-git.git
+# To github-personal:sergio-jr-dev/ejemplos-git.git
 #  * [new branch]      pruebas -> pruebas
 ```
 
@@ -1448,7 +1444,7 @@ git push origin --delete <nombre-rama>
 
 git push origin --delete pruebas
 # Enter passphrase for key '/Users/sergio/.ssh/id_rsa_trabajo':
-# To github-trabajo:reposocratech/ejemplos-git.git
+# To github-personal:sergio-jr-dev/ejemplos-git.git
 #  - [deleted]         pruebas
 ```
 
@@ -1735,12 +1731,3 @@ También es posible **ignorar archivos de manera global** en todos los repositor
 [⬆️ Volver a inicio](#introducción)
 
 Si te ha gustado esta guía guárdate el repositorio como favorito dándole a la ⭐️ y compártela con tus conocidos.
-
-## Descubre más sobre nosotros
-
-[![Icono de web](https://user-images.githubusercontent.com/87479242/126154307-6a46a75b-c8ac-4bce-bdbb-3f310f6f79e4.png) ](https://socratech.es)
-[![Icono de LinkedIn](https://user-images.githubusercontent.com/87479242/126153707-d53ee096-f0aa-4586-a9d5-f19c9107452f.png) ](https://www.linkedin.com/company/escuela-socratech)
-[![Icono de Twitter](https://user-images.githubusercontent.com/87479242/126154449-7f1b0cc6-3ccf-44f1-a93f-420f3ad62307.png) ](https://twitter.com/socratech_)
-[![Icono de Instagram](https://user-images.githubusercontent.com/87479242/126154145-d86f68b8-2ebb-4fe6-8a46-c6c966185a68.png) ](https://www.instagram.com/socratechescuela/)
-[![Icono de Facebook](https://user-images.githubusercontent.com/87479242/126153919-cabd5179-539f-4650-a5e8-08ae2e397b7a.png) ](https://www.facebook.com/SocraTech-106357911679909/)
-[![Icono de YouTube](https://user-images.githubusercontent.com/87479242/126154734-218fdb68-30e1-4857-8953-a4dc7089994a.png) ](https://www.youtube.com/channel/UCP0nrDXWANd_H7WkGlrWJcg)
